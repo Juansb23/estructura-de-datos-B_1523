@@ -19,7 +19,7 @@ export default {
                 { user: 'admin', pass: '1234'},
                 { user: 'Juan', pass: '5678'}
             ]
-            const valido = user.find(u => u.user === this.usuario && u.pass === this.clave)
+            const valido = users.find(u => u.user === this.usuario && u.pass === this.clave)
             if (valido){
                 localStorage.setItem('logueado', 'true')
                 this.$router.push('dashboard')

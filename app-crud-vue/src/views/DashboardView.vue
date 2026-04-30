@@ -15,7 +15,7 @@
 export default {
   methods: {
     logout() {
-      localstorage.removeItem("logueado")
+      localStorage.removeItem("logueado")
       this.$router.push('/')
     }
   }
